@@ -255,33 +255,16 @@ $(document).on("click",".video-modal",function(){
  $(".video").append("<span></span>");
 
 
-// function rotatefish(){
-//     if($(".sail img").attr('src')=="images/sail-right.png"){
-//         $(".sail img").attr('src','images/sail-left.png');
-//         $(".sail").css("animation", "translate2  15s infinite linear");
-//     }
-    
-//     else{
-//         $(".sail img").attr('src','images/sail-right.png');
-//         $(".sail").css("animation", "translate  15s infinite linear");
-//     }
+$(document).ready(function(){
+    setInterval(function(){
+        if($(".sail").css("left")=="1px"){
+            $(".sail img").attr("src", "images/sail-right.png");
+        }
+        else
+        $(".sail img").attr("src", "images/sail-left.png");
 
-
-//     setTimeout(() => {
-//         rotatefish();
-//     }, 5000);
-
-// }
-
-// rotatefish();
-
-// $(document).on("click", ".sail img", function(){
-//     $(".sail").css("animation", "translate 8s infinite linear");
-//     setTimeout( function(){
-//         $(".sail").css("animation", "translate 15s infinite linear");
-//     }, 1000)
-   
-// })
+    }, 100);
+})
 
 
 

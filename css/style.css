@@ -946,8 +946,8 @@ footer{
 .sail{
     position:absolute;
     width:5%;
-    animation: translate  15s infinite linear;
-   
+    animation: translate  25s infinite linear;
+    left:1px;
 }
 
 
@@ -956,6 +956,7 @@ footer{
     width: 100%;
     animation: upDown 1.5s alternate infinite ease-in-out;
     width:100%;
+    
 }
 .sail img:after{
     content:"";
@@ -973,8 +974,7 @@ footer{
     to { transform: translatey(15px);}
 }
   @keyframes translate {
-    to { transform: translatex(95vw);}
-}
-@keyframes translate2 {
-    to { transform: translatex(-95vw);}
+    0% {left: 1px;}
+    50% { transform: translatex(95vw); left:1px; }
+    100% { transform: translatex(-0vw); left:0px;}
 }
