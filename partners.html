@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <article class="header">
+    <article class="header header-news">
 
         
         <h1>
@@ -22,7 +22,12 @@
                 </a>
             </div>
         </h1>
-        
+        <div class="mobile-menu android">
+            <img src="images/menu-android.png" alt="android">
+        </div>
+        <div class="mobile-menu iphone">
+            <img src="images/menu-iphone.png" alt="android">
+        </div>
         <nav>
             <ul class="home-ul">
                 <li class="border">
@@ -198,21 +203,24 @@ $(".partner-arrow").click(function(){
     $(this).toggleClass("top");
      
 })
-// $(".arrow-top").click(function(){
-//     $(document).on("click", ".arrow-top", function(){
-//     alert("top");
-//     $(this).parent().children('p').animate({height: "50px"}, 500);
-    
-//     $(this).removeClass("arrow-top");
-//     $(this).addClass("partner-arrow");
-// })
+$(document).ready(function(){
+    setInterval(function(){
+        if($(".sail").css("left")=="1px"){
+            $(".sail img").attr("src", "images/sail-right.png");
+        }
+        else
+        $(".sail img").attr("src", "images/sail-left.png");
 
-// $('.product-lists li.product').on('mouseover',function(e){
-//     owl.trigger('play.owl.autoplay');
-// })
-// $('.product-lists li.product').on('mouseleave',function(e){
-//     owl.trigger('stop.owl.autoplay');
-// })
+    }, 100);
+})
+$(document).on("click", ".mobile-menu", function(){
+    if( $("nav").css("display")=="none" ){
+        $("nav").css("display", "block");
+        
+    }
+    else $("nav").css("display", "none");
+    
+}) 
 </script>
 
 

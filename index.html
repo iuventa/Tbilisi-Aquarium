@@ -23,8 +23,14 @@
                     </a>
                 </div>
             </h1>
-            
+            <div class="mobile-menu android">
+                <img src="images/menu-android.png" alt="android">
+            </div>
+            <div class="mobile-menu iphone">
+                <img src="images/menu-iphone.png" alt="android">
+            </div>
             <nav>
+                
                 <ul class="home-ul">
                     <li class="border">
                         <a href="index.html" class="li-active">
@@ -245,6 +251,15 @@ $('.owl-carousel').owlCarousel({
      
     }
 })
+$(document).on("click", ".mobile-menu", function(){
+    if( $("nav").css("display")=="none" ){
+        $("nav").css("display", "block");
+        
+    }
+    else $("nav").css("display", "none");
+    
+}) 
+
 </script>
 </body>
 </html>

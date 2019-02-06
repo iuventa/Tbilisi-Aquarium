@@ -9,7 +9,9 @@
 a{
     text-decoration: none;
 }
-
+p{
+    text-align: justify;
+}
 
 /*header .....................................................*/
 
@@ -27,6 +29,15 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+.mobile-menu{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: none;
+}
+.mobile-menu img{
+    width: 100%;
 }
 .header:before{
     content: "";
@@ -91,6 +102,7 @@ nav{
     color: #305c2b!important;
     border-bottom: 2px solid #305c2b;
 }
+
 
 
 /*slider .....................................................*/
@@ -219,6 +231,7 @@ nav{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
  
 }
 .story-a{
@@ -236,6 +249,7 @@ nav{
     color: white;
     padding-top: 20px;
     font-family: 'Merienda', cursive;
+    text-align: justify;
 }
 .news-a{
     width: 30%;
@@ -271,6 +285,7 @@ nav{
     flex-direction: column;
     height: 320px;
 }
+
 .form h2{
     color: #e2931a;
     font-size: 24px;
@@ -977,4 +992,590 @@ footer{
     0% {left: 1px;}
     50% { transform: translatex(95vw); left:1px; }
     100% { transform: translatex(-0vw); left:0px;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header{
+        width: 90%;
+        padding-bottom: 30px;
+  
+    }
+    .nav{
+        width: 80%;
+    }
+    .home-ul{
+        width: 100%;
+        
+    }
+    .home-ul li a{
+        font-size: 12px;
+    }
+    .slider{
+        width: 90%;
+        margin:0 auto;
+        left:0;
+       
+    }
+    .title{
+        margin-top: -30px;
+    }
+    .title p{
+        font-size:14px;
+    }
+    .title h2{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .title h3{
+        font-size:20px;
+    }
+    .content{
+        width:90%;
+    }
+    .main{
+        padding-bottom: 70px;
+        padding-top: 210px;
+    }
+    .story-a{
+        width: 45%;
+    }
+    .news-a{
+        width: 45%;
+    }
+    .story h2{
+        font-size:20px;
+    }
+    .story p{
+        font-size: 16px;
+    }
+    .news h2{
+        font-size:20px;
+    }
+    .news-box p{
+        font-size: 16px;
+    }
+    .form{
+        width: 50%;
+        margin: 30px auto;
+    }
+    .story-a-about{
+        width: 100%;
+    }
+    .story-about{
+        width: 100%;
+    }
+    .news-a-about{
+        width: 100%;
+    }
+   .services{
+       margin-top: 20px;
+       width: 100%;
+   }
+   .services-ul{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       
+   }
+   .services-ul li{
+       width: 45%;
+      
+   }
+   .header-news:before{
+       margin-top: 100px;
+   }
+   .sail-rel{
+       margin-top: 85px;
+   }
+   .main-news{
+       padding-top: 50px;
+   }
+   .news-page{
+       width: 100%;
+   }
+   .news-flex{
+       width: 100%;
+       flex-wrap: wrap;
+   }
+   .news-flex .news-box{
+       width: 45%;
+   }
+   .main-partner{
+       padding-top: 50px;
+   }
+   .partner-carousel .owl-nav{
+       width: 700px;
+       margin-left: 30px;
+   }
+   .partner-carousel .item{
+       width: 100pxt;
+   }
+   .item-img{
+       width: 100%;
+   }
+   .main-gallery{
+       padding-top: 50px;
+   }
+   .fishes{
+       width: 100%;
+   }
+   .fishes .fishes-img{
+       width: 45%;
+   }
+   .contact-main{
+       padding-top: 50px;
+   }
+   .video-modal{
+       width: 100%;
+   }
+   .video-modal video{
+       width: 70%;
+       margin-left: -490px;
+   }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .header{
+        width: 70%;
+        padding-bottom: 30px;
+        position: relative;
+    }
+    .header:before{
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 80px;
+    }
+    .iphone{
+        display: block;
+    }
+    
+    nav{
+        width: 80px;
+        position: absolute;
+        top:0;
+        left:0;
+        margin-top: 50px;
+        margin-left: 200px;
+        z-index: 5;
+        background-color: rgba(255,255,255,0.7);
+        padding: 10px;
+        display: none;
+    }
+    .home-ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .home-ul li a{
+        font-size: 10px;
+    }
+    .slider{
+        width: 90%;
+        margin:0 auto;
+        left:0;
+        margin-top: -20px;
+    }
+    .owl-theme .item .slider-img{
+        height: 100px;
+        overflow: hidden;
+    }
+    .owl-theme .item .slider-img img{
+      width: 100%;
+      margin-top: 0px;
+    }
+    .title{
+        margin-top: -180px;
+        height: 60px;
+        
+    }
+    .title p{
+        display: none;
+    }
+    .title h2{
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    .title:after{
+        display: none;
+    }
+    .title h3{
+        font-size:20px;
+    }
+
+    .content{
+        width:90%;
+    }
+    .main{
+        padding-top: 100px;
+        margin-top: -290px;
+    }
+    .story-a{
+        width: 90%;
+    }
+    .news-a{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .story h2{
+        font-size:20px;
+    }
+    .story p{
+        font-size: 16px;
+    }
+    .news h2{
+        font-size:20px;
+    }
+  
+    .news-box p{
+        font-size: 16px;
+    }
+    .form{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .story-a-about{
+        width: 100%;
+    }
+    .story-about{
+        width: 100%;
+    }
+    .news-a-about{
+        width: 100%;
+    }
+   .services{
+       margin-top: 20px;
+       width: 100%;
+   }
+   .services-ul{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       
+   }
+   .services-ul li{
+       width: 90%;
+      
+   }
+   .header-news:before{
+       margin-top: 70px;
+   }
+   .sail-rel{
+       margin-top: 70px;
+   }
+   .sail{
+        width: 40px;
+        height: 50px;
+        overflow: hidden;
+   }
+   .sail img{
+       width: 100%;
+   }
+   .main-news{
+       margin-top: 0;
+       padding-top: 20px;
+   }
+   .news-page{
+       width: 100%;
+   }
+   .news-flex{
+       width: 100%;
+       flex-wrap: wrap;
+   }
+   .news-flex .news-box{
+       width: 90%;
+   }
+   .main-partner{
+       margin-top: 0;
+       padding-top: 20px;
+   }
+   .partner-carousel.owl-carousel {
+       display: none;
+   }
+   .partner-box{
+       margin-top: 10px;
+       flex-direction: column;
+       align-items: center;
+   }
+   .partner-box h4{
+       width: 80%;
+       text-align: center;
+       
+   }
+   .partner-arrow{
+       margin-top: 10px;
+   }
+   .main-gallery{
+       margin-top: 0;
+       padding-top: 50px;
+   }
+   .fishes{
+       width: 100%;
+       height: 180px;
+   }
+   .gallery-arrow{
+       top:82%;
+   }
+   .fishes .fishes-img{
+       width: 45%;
+       height: 100px;
+   }
+   .fishes .fishes-img img{
+    width: 120%;
+}
+ .video span{
+       top:30px;
+}
+   .video-modal{
+       width: 100%;
+   }
+   .video-modal video{
+       width: 35%;
+       margin-left: -505px;
+   }
+   .contact-main{
+       margin-top: 0;
+    padding-top: 50px;
+}
+.contact{
+    width: 90%;
+}
+    .contact-box-flex{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .contact-box{
+        width:45%; 
+        
+    }
+    .day-contact{
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .header{
+        width: 70%;
+        padding-bottom: 30px;
+        position: relative;
+    }
+    .header:before{
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 80px;
+    }
+    .iphone{
+        display: block;
+    }
+    
+    nav{
+        width: 80px;
+        position: absolute;
+        top:0;
+        left:0;
+        margin-top: 50px;
+        margin-left: 200px;
+        z-index: 5;
+        background-color: rgba(255,255,255,0.7);
+        padding: 10px;
+        display: none;
+    }
+    .home-ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .home-ul li a{
+        font-size: 10px;
+    }
+    .slider{
+        width: 90%;
+        margin:0 auto;
+        left:0;
+        margin-top: -20px;
+    }
+    .owl-theme .item .slider-img{
+        height: 100px;
+        overflow: hidden;
+    }
+    .owl-theme .item .slider-img img{
+      width: 100%;
+      margin-top: 0px;
+    }
+    .title{
+        margin-top: -180px;
+        height: 60px;
+        
+    }
+    .title p{
+        display: none;
+    }
+    .title h2{
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    .title:after{
+        display: none;
+    }
+    .title h3{
+        font-size:20px;
+    }
+
+    .content{
+        width:90%;
+    }
+    .main{
+        padding-top: 100px;
+        margin-top: -290px;
+    }
+    .story-a{
+        width: 90%;
+    }
+    .news-a{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .story h2{
+        font-size:20px;
+    }
+    .story p{
+        font-size: 16px;
+    }
+    .news h2{
+        font-size:20px;
+    }
+  
+    .news-box p{
+        font-size: 16px;
+    }
+    .form{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .story-a-about{
+        width: 100%;
+    }
+    .story-about{
+        width: 100%;
+    }
+    .news-a-about{
+        width: 100%;
+    }
+   .services{
+       margin-top: 20px;
+       width: 100%;
+   }
+   .services-ul{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       
+   }
+   .services-ul li{
+       width: 90%;
+      
+   }
+   .header-news:before{
+       margin-top: 70px;
+   }
+   .sail-rel{
+       margin-top: 70px;
+   }
+   .sail{
+        width: 40px;
+        height: 50px;
+        overflow: hidden;
+   }
+   .sail img{
+       width: 100%;
+   }
+   .main-news{
+       margin-top: 0;
+       padding-top: 20px;
+   }
+   .news-page{
+       width: 100%;
+   }
+   .news-flex{
+       width: 100%;
+       flex-wrap: wrap;
+   }
+   .news-flex .news-box{
+       width: 90%;
+   }
+   .main-partner{
+       margin-top: 0;
+       padding-top: 20px;
+   }
+   .partner-carousel.owl-carousel {
+       display: none;
+   }
+   .partner-box{
+       margin-top: 10px;
+       flex-direction: column;
+       align-items: center;
+   }
+   .partner-box h4{
+       width: 80%;
+       text-align: center;
+       
+   }
+   .partner-arrow{
+       margin-top: 10px;
+   }
+   .main-gallery{
+       margin-top: 0;
+       padding-top: 50px;
+   }
+   .fishes{
+       width: 100%;
+       height: 180px;
+   }
+   .gallery-arrow{
+       top:82%;
+   }
+   .fishes .fishes-img{
+       width: 45%;
+       height: 100px;
+   }
+   .fishes .fishes-img img{
+    width: 120%;
+}
+ .video span{
+       top:30px;
+}
+   .video-modal{
+       width: 100%;
+   }
+   .video-modal video{
+       width: 35%;
+       margin-left: -505px;
+   }
+   .contact-main{
+       margin-top: 0;
+    padding-top: 50px;
+}
+.contact{
+    width: 90%;
+}
+    .contact-box-flex{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .contact-box{
+        width:45%; 
+        
+    }
+    .day-contact{
+        padding-right: 30px;
+    }
 }

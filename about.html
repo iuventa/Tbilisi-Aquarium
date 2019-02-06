@@ -23,7 +23,12 @@
                     </a>
                 </div>
             </h1>
-            
+            <div class="mobile-menu android">
+                <img src="images/menu-android.png" alt="android">
+            </div>
+            <div class="mobile-menu iphone">
+                <img src="images/menu-iphone.png" alt="android">
+            </div>
             <nav>
                 <ul class="home-ul">
                     <li class="border">
@@ -90,7 +95,7 @@
 
     <div class="main">
         <article class="content content-about">
-            <a href="about.html" class="story-a">
+            <a href="about.html" class="story-a story-a-about">
             <section class="story story-about">
                 <h2>
                     
@@ -101,7 +106,6 @@
                 </p>
             </section>
         </a>
-        <a href="news.html" class="news-a">
             <section class="services">
                 <h2>
                     Services
@@ -151,7 +155,7 @@
                     </li>
                 </ul>
             </section>
-        </a>
+       
             
         </article>
     </div>
@@ -231,6 +235,14 @@ $('.owl-carousel').owlCarousel({
      
     }
 })
+$(document).on("click", ".mobile-menu", function(){
+    if( $("nav").css("display")=="none" ){
+        $("nav").css("display", "block");
+        
+    }
+    else $("nav").css("display", "none");
+    
+}) 
 </script>
 </body>
 </html>

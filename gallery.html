@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <article class="header">
+        <article class="header header-news">
   
             
             <h1>
@@ -21,7 +21,12 @@
                     </a>
                 </div>
             </h1>
-            
+            <div class="mobile-menu android">
+                <img src="images/menu-android.png" alt="android">
+            </div>
+            <div class="mobile-menu iphone">
+                <img src="images/menu-iphone.png" alt="android">
+            </div>
             <nav>
                 <ul class="home-ul">
                     <li class="border">
@@ -267,7 +272,14 @@ $(document).ready(function(){
 })
 
 
-
+$(document).on("click", ".mobile-menu", function(){
+    if( $("nav").css("display")=="none" ){
+        $("nav").css("display", "block");
+        
+    }
+    else $("nav").css("display", "none");
+    
+}) 
 
 </script>
 
