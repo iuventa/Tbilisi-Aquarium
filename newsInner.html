@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Sarabun" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tbilisi Aquarium</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <article class="header header-news">
+  
+            
+            <h1>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+            </h1>
+            <div class="mobile-menu android">
+                <img src="images/menu-android.png" alt="android">
+            </div>
+            <div class="mobile-menu iphone">
+                <img src="images/menu-iphone.png" alt="android">
+            </div>
+            <nav>
+                <ul class="home-ul">
+                    <li class="border">
+                        <a href="index.html" >
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html"  >
+                            About Us
+                        </a></li>
+                    <li >
+                        <a href="news.html" class="li-active">
+                                News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="partners.html">
+                                Partners
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">
+                                Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+                  
+        </article>
+
+        <div class="sail-rel">
+ 
+            <div class="sail">
+              <img src="images/sail-right.png">
+            </div>
+    
+        </div>
+    </header>
+    
+
+    <div class="main main-news main-news-inner">
+        <article class="content">
+                    <span class="go_back">
+                    <a href="news.html">
+                        Go Back
+                    </a>  
+                    </span>  
+                    <div class="news_title">Best Character</div>
+                        <div class="news-box">
+                            <div class="new-img">
+                                <img src="images/fish1.jpg" alt="">
+                            </div>
+                            
+                            <span class="time">
+                                14.1.19
+                            </span>
+                            <br>
+                            <p>
+                                Later in the design process, Nomura became concerned that Aqua would not be popular, which drove his design process decision to make her more distinct in her design process personal bravery and combat abilities. 
+                                Later in the design process, Nomura became concerned that Aqua would not be popular, which drove his design process decision to make her more distinct in her design process personal bravery and combat abilities. 
+                                Later in the design process, Nomura became concerned that Aqua would not be popular, which drove his design process decision to make her more distinct in her design process personal bravery and combat abilities. 
+
+                            </p>
+                        </div>
+        </article>
+    </div>
+    
+    <footer>
+         <section class="copyright">
+            &#169; Test 2020 Jan
+         </section>
+         <section class="student">
+             <p>
+                 <a href="#">
+                    Salome Gachechiladze
+                </a>
+             </p>
+         </section>
+    </footer>
+
+
+   
+
+   
+ 
+          
+
+   
+
+      
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script>
+   
+    $(".showMore").click(function(){
+        if ( $(".news-flex").height()==350){
+        $(".news-flex").animate({height: "720px"}, 1000 );
+        $(this).text("Show Less");
+    }
+    else {
+        $(".news-flex").animate({height: "350px"}, 1000 );
+        $(this).text("Show More");
+    }
+        
+    })
+
+    $(document).ready(function(){
+    setInterval(function(){
+        if($(".sail").css("left")=="1px"){
+            $(".sail img").attr("src", "images/sail-right.png");
+        }
+        else
+        $(".sail img").attr("src", "images/sail-left.png");
+
+    }, 100);
+})
+$(document).on("click", ".mobile-menu", function(){
+    if( $("nav").css("display")=="none" ){
+        $("nav").css("display", "block");
+        
+    }
+    else $("nav").css("display", "none");
+    
+}) 
+</script>
+
+
+
+
+
+</body>
+</html>
